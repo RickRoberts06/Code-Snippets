@@ -1,0 +1,16 @@
+<hr>
+<%= form_for @snippet do |f| %>
+<div>
+<%= f.select :kind, options_for_select([["Ruby", "ruby"], ["Html", "html"],
+                          ["CSS", "css"], ["JavaScript", "javascript"]]) %>
+</div>
+<div>
+  <%= f.label :title %>
+  <%= f.text_field :title  %>
+</div>
+<div>
+  <%= f.label :work %>
+  <%= f.text_area :work %>
+</div>
+  <%= f.submit  %>
+<% end %>

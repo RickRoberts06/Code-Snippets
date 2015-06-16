@@ -1,0 +1,9 @@
+<h1> Code Snippets</h1>
+<hr>
+<table>
+  <% @categories.each do |f|  %>
+  <tr>
+    <td><%= link_to "#{f.name}" %></td>
+  </tr>
+  <% end %>
+</table>
