@@ -9,7 +9,7 @@ class SnippetsController < ApplicationController
   end
 
   def create
-    @snippet = Snippet.new params.require(:snippet).permit([:kind, :title, :work])
+    @snippet = Snippet.new params.require(:snippet).permit([:kind, :title, :work, :category_id])
 
     if @snippet.save
     redirect_to root_path
@@ -17,7 +17,10 @@ class SnippetsController < ApplicationController
   end
 
   def show
-    @snippet = Snippet.find params[:id]
-    @category = @category.snippets.new
+    @category = Category.find params[:id]
+    @snippet = @category.snippets
   end
+
+
+
 end

@@ -5,14 +5,16 @@ class CategoriesController < ApplicationController
   end
 
   def new
-    @category = Category.new
     @snippet = Snippet.new
   end
 
   def create
     @category = Category.find params[:id]
-
   end
 
+  def show
+    @category = Category.find params[:id]
+    @snippets = @category.snippets
+  end
 
 end

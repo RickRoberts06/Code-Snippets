@@ -1,0 +1,18 @@
+<h1> Snippets </h1>
+<hr>
+<% @snippet.each do |snip| %>
+<table>
+  <tr>
+    <th>
+      <%= snip.title %>
+    </th>
+  </tr>
+  
+  <tr>
+    <td>
+      <%=  snip.work %>
+    </td>
+</table>
+<hr>
+
+<% end %>
