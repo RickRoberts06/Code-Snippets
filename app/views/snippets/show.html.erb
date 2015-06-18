@@ -1,4 +1,4 @@
-<h1> Snippets </h1>
+<h1> Snippet for  </h1>
 <hr>
 <% @snippet.each do |snip| %>
 <table>
@@ -7,12 +7,11 @@
       <%= snip.title %>
     </th>
   </tr>
-  
+
   <tr>
     <td>
-      <%=  snip.work %>
+      <%= snip.work %>
     </td>
 </table>
 <hr>
-
 <% end %>

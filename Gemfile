@@ -29,6 +29,12 @@ gem 'interactive_editor'
 
 gem 'faker'
 
+gem "quiet_assets"
+
+gem "bootstrap-sass"
+
+gem 'kaminari'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

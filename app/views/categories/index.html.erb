@@ -3,7 +3,8 @@
 <table>
   <% @categories.each do |f|  %>
   <tr>
-    <td><%= link_to "#{f.name}", category_path(f) %></td>
+    <td><%= link_to "#{f.name} ( #{f.snippets.count} snippets )", category_path(f) %></td>
+
   </tr>
   <% end %>
 </table>

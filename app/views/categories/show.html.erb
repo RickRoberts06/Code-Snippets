@@ -1,8 +1,9 @@
 <h1><%= @category.name %> Snippets </h1>
+<hr>
 
 <% @snippets.each do |snippet| %>
 
-  <ol>
-    <li><%= link_to snippet.title, snippet_path(snippet) %> </li>
-  </ol>
+  <ul>
+    <li><%= link_to snippet.title, snippet_path(snippet.category_id) %> </li>
+  </ul>
 <% end %>
